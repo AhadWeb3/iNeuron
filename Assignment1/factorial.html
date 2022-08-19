@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial of number</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="factorial" name="factorial" placeholder="Enter Number">
+        <input type="button" value="sumbit" id="sumbit">
+        <p class="result" id="result" placeholder = "Result"></p>
+    </div>
+</body>
+<script>
+
+const factorial = document.getElementById('factorial');
+const submit = document.getElementById('sumbit');
+const result = document.getElementById('result');
+
+
+
+function getFactorial(){
+
+    return result.innerHTML = factorial.value;
+    
+}
+submit.addEventListener('click', getFactorial);
+</script>
+</html>
