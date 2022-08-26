@@ -2,7 +2,7 @@ const prompt = require("prompt-sync")();
 
 const num = parseInt(prompt('Enter the number to find its factorial '));
    
-function recurring(num){
+function recursive(num){
     if(num === 0 || num === 1){
          return 1;
     }else{
@@ -10,4 +10,4 @@ function recurring(num){
     }   
 }
 
-console.log(`The factorial of ${num} is ${recurring(num)}`);
+console.log(`The factorial of ${num} is ${recursive(num)}`);

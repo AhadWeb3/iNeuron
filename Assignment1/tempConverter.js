@@ -1,12 +1,7 @@
-// converting temperature to and from celsius, fahrenheit
+const prompt = require('prompt-sync')();
 
-// formula: (c/5 = (f-32)/9)
+const c = parseInt(prompt("Enter temperature in celcius:"));
 
-let celsius = 60 ;
-let fahrenheit = 0;  
+let f = ((c/5)*9)+32;
+console.log(`${c}°C is ${f}°F`);
 
-
-celsius = ((fahrenheit-32)/9)*5;
-fahrenheit = (celsius/5)*9 + 32;
-
-console.log(celsius);
