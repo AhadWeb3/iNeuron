@@ -2,6 +2,12 @@ const prompt = require("prompt-sync")();
 
 const marks = parseInt(prompt('Enter marks of the student: '));
 
+
+/*
+case (statement) returns a value of true or false depending on the statement
+we can pass true to the switch statement, if any condition is matched then the case is exicuted
+*/
+
 switch(true) {
     case ((marks > 90) && (marks <= 100)):
       console.log(`Student got S Grade`);
@@ -26,5 +32,4 @@ switch(true) {
       break;
     default:
         console.log(`Invalid marks`);
-      // code block
   }
