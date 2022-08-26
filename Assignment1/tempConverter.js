@@ -1,11 +1,12 @@
 const prompt = require('prompt-sync')();
 
-const input = parseInt(prompt("Enter temperature in celcius:"));
+const input1 = parseInt(prompt("Enter temperature in celcius:"));
+const input2 = parseInt(prompt("Enter temperature in Farenhiet:"));
 
 
-let f = ((input/5)*9)+32;
-console.log(`${input}°C is ${f}°F`);
+let f = ((input1/5)*9)+32;
+console.log(`${input1}°C is ${f}°F`);
 
-let c = ((input-32))*5/9;
-console.log(`${input}°F is ${c}°C`);
+let c = ((input2-32))*5/9;
+console.log(`${input2}°F is ${c}°C`);
 
