@@ -1,9 +1,10 @@
 const prompt = require("prompt-sync")();
+// store input numbers
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
 
-let input1 = prompt("Number 1? ");
-let input2 = prompt("Number 2? ");
+//add two numbers
+const sum = num1 + num2;
 
-let sum = input1 + input2;
-
-console.log(`Your sum is:` + sum);
-  
+// display the sum
+console.log(`The sum of ${num1} and ${num2} is ${sum}`);
