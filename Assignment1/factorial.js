@@ -1,33 +1,9 @@
-// formula for a facrorial is n*(n-1)
+const prompt = require("prompt-sync")();
 
-// let factorial = function(n){
-//     if(n === 0){ return 1;}
-//     else{ return n * (n-1) }
-// }
+let input1 = prompt("Number 1? ");
+let input2 = prompt("Number 2? ");
 
-// console.log(factorial(3));
+let sum = input1 + input2;
 
-// const input = prompt('Please enter a number');
-console.log("this is a log");
-
-// import readline module
-const readline = require("readline");
-
-// create interface for input and output
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
-// create empty user input
-let userInput = "";
-// question user to enter name
-rl.question("What is your name\n", function (string) {
-    userInput = string;
+console.log(`Your sum is:` + sum);
   
-    console.log("Your name is " + userInput);
-  
-    // close input stream
-    rl.close();
-  });
-
