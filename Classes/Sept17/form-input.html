@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<head>
+    <title>
+        Form Input
+    </title>
+    <h2>Take input form user in HTML forms</h2>
+</head>
+<body>
+    <input type="text" placeholder="Enter Username" id="text1"><br>
+    <input type="Password" placeholder="Enter Password" id="text2"><br>
+    <button onclick="func1()" id="btn1">Submit</button>
+    
+    <h1>Manipulate radio buttons using DOM</h1>
+    <input type="radio" name="grp1" id="rd1">Blockchain </input> <br>
+    <input type="radio" name="grp1" id="rd2">Solidity </input> <br>
+    <button onclick="func2()" id="btn1">Submit</button>
+
+    <script type="text/javascript">
+        let func2 = () => {
+            for(let i = 0; i <=5; i++){
+                let rd = document.getElementById(rd+'i');
+                if(rd.checked == true){
+                        alert(`the topic for today class is ${(rd +'i').value}`)
+                } 
+            }
+        }
+
+        let func1 = () => {
+            let str1 = document.getElementById('text1').value;
+            window.alert(`User name is ${str1}`);
+        }
+
+    </script>
+</body>
+</html>
