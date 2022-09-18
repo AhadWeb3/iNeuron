@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Validation</title>
+</head>
+<body>
+    <h1>Email Validation</h1>
+    <form action="">
+        <input type="text" name="" id="text1" placeholder="Email ID"> <br>
+        <label for="text" id="lb1text" style="color: red;visibility: hidden;">Invalid</label> <br>
+        <button onclick="validate()" type="button">Validate</button>
+    </form>
+    <script type="text/javascript">
+        function validate(){
+        let text = document.getElementById('text1').value;
+        let regex = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+)\.([a-z]{2,20})(.[a-z]{2,10})?$/;
+        
+        if(regex.test(text)){
+            document.getElementById("lb1text").innerHTML = "valid";
+            document.getElementById("lb1text").style.visibility = "Visible";
+            document.getElementById("lb1text").style.color = "green";
+        }else{
+            document.getElementById("lb1text").innerHTML = "invalid";
+            document.getElementById("lb1text").style.visibility = "Visible";
+            document.getElementById("lb1text").style.color = "red";
+        }
+    }
+    </script>
+</body>
+</html>
